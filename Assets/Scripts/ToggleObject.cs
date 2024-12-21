@@ -5,8 +5,6 @@ public class ToggleObject : MonoBehaviour
 {
     public GameObject targetObject; // Объект, который нужно активировать/деактивировать
     public Button toggleButton;    // Кнопка для выполнения действия
-    public Text Mytxt;
-    public int x = 0;
 
     void Start()
     {
@@ -18,7 +16,5 @@ public class ToggleObject : MonoBehaviour
     {
         // Проверяем текущее состояние объекта и переключаем его
         targetObject.SetActive(!targetObject.activeSelf);
-        x++;
-        Mytxt.text = x.ToString();
     }
 }
